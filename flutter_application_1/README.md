@@ -6,17 +6,23 @@ Aplikasi manajemen tugas yang terintegrasi dengan Supabase REST API untuk mengel
 
 ### 1. **Dashboard (Beranda)**
 
+![alt text](image.png)
+
 - Menampilkan ringkasan Total Tugas dan Tugas Selesai
 - Menampilkan 3 tugas terdekat dengan status badge (Berjalan/Selesai/Terlambat)
 - Navigasi cepat ke Daftar Tugas, Detail Tugas, dan Tambah Tugas
 
 ### 2. **Daftar Tugas**
 
+![alt text](image-1.png)
+
 - Filter tugas berdasarkan status: Semua, Berjalan, Selesai, Terlambat
 - Pencarian tugas berdasarkan judul atau mata kuliah
 - Navigasi ke Detail Tugas dan Tambah Tugas
 
 ### 3. **Detail Tugas**
+
+![alt text](image-2.png)
 
 - Melihat informasi lengkap tugas (judul, mata kuliah, deadline, status)
 - Toggle checkbox untuk menandai tugas selesai/belum selesai
@@ -25,6 +31,8 @@ Aplikasi manajemen tugas yang terintegrasi dengan Supabase REST API untuk mengel
 
 ### 4. **Tambah Tugas**
 
+![alt text](image-3.png)
+
 - Form input dengan validasi:
   - Judul Tugas (wajib)
   - Mata Kuliah (dropdown selection, wajib)
@@ -32,6 +40,21 @@ Aplikasi manajemen tugas yang terintegrasi dengan Supabase REST API untuk mengel
   - Checkbox tugas selesai
   - Catatan tambahan (opsional)
 - Validasi input sebelum submit
+
+### 5. **Edit Tugas**
+
+![alt text](image-4.png)
+
+- Edit tugas yang sudah ada dengan form yang sudah terisi otomatis
+- Validasi data input sebelum update
+- Update informasi tugas:
+  - Judul Tugas
+  - Mata Kuliah
+  - Deadline
+  - Status penyelesaian (checkbox)
+  - Catatan
+- Sinkronisasi perubahan dengan database
+- Navigasi kembali ke Detail Tugas setelah berhasil update
 
 ## 🏗️ Arsitektur Proyek
 
